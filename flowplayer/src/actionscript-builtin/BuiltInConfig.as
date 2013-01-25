@@ -3,12 +3,14 @@ package  {
     import com.iheart.stw.StreamTheWorldProvider;
     import org.flowplayer.audio.AudioProvider;
     import org.flowplayer.rtmp.RTMPStreamProvider;
+    import org.flowplayer.audiovisual.AudioVisual;
 
     public class BuiltInConfig {
         private var audio:AudioProvider;
         private var ima:InteractiveMediaAdsProvider;
         private var rtmp:RTMPStreamProvider;
         private var stw:StreamTheWorldProvider;
+        private var audiovisual:AudioVisual;
         
         public static const config:Object = {
             //don't show any errors on FP's screen
@@ -25,6 +27,9 @@ package  {
             
             plugins: {
                 controls: null,
+                audiovisual: {
+                    "url": "org.flowplayer.audiovisual.AudioVisual"
+                },
                 audio: {
                     "url": "org.flowplayer.audio.AudioProvider"
                 },

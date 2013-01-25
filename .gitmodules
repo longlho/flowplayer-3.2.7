@@ -4,3 +4,6 @@
 [submodule "ima"]
 	path = ima
 	url = git@github.com:thatguystone/flowplayer-ima.git
+[submodule "audiovisual"]
+	path = audiovisual
+	url = git@github.com:longlho/audiovisual.git
